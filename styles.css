@@ -1,35 +1,95 @@
-.member-card {
-  background-color: teal;
-  width: 300px;
-  height: 310px;
-  margin-bottom: 15px;
-  border-radius: 10%;
+html {
+  height: 100%;
+}
+body {
+  background-image: linear-gradient(to bottom right, #8fca6c, #41b3ae);
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  overscroll-behavior: none;
 }
 
-.member-left {
-  margin-top: 40px;
-  padding-left: 200px;
-}
-
-.member-right {
-  margin-right: 20px;
-}
-
-.title-text {
-  font-size: 110px;
+#app {
+  font-size: 70px;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
+  color: #28282b;
   font-style: normal;
-}
-
-.profile-pic {
-  width: 125px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  padding-top: 100px;
 }
 
 .main-body {
   padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+/* .member-card {
+  background-color: #e4f6dd;
+  width: 245px;
+  height: 430px;
+  border-radius: 37px;
+}*/
+
+/* .profile-pic {
+  width: 220px;
+  height: 150px;
+  border: 1px black solid;
+  border-radius: 15px;
+  margin-bottom: 10px;
+} */
+
+.down-card {
+  margin-top: 90px;
+  padding-top: 30px;
+}
+.up-card {
+  margin-top: 20px;
+  padding-top: 30px;
+}
+.card-name {
+  padding-top: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 225px;
+  grid-template-rows: 173px 157px;
+  grid-template-areas: "card-image" "text";
+  border-radius: 18px;
+  background: #e4f6dd;
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card-image {
+  grid-area: card-image;
+  background-image: url("src/images/cool_cat.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.4);
 }
